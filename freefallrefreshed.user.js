@@ -1,17 +1,18 @@
 // ==UserScript==
 // @name         Freefall Refreshed
 // @namespace    Freefall with a fresh coat of paint.
-// @version      0.1
-// @description  try to take over the world!
+// @version      0.2
 // @author       infinitytec
 // @match        http://freefall.purrsia.com/
+// @include      http://freefall.purrsia.com/default.htm
+// @include      http://freefall.purrsia.com/lastthree.htm
 // @grant        GM_addStyle
 // @updateURL    https://github.com/infinitytec/Freefall-Refreshed/raw/master/freefallrefreshed.user.js
 // ==/UserScript==
 
 (function() {
     'use strict';
-    GM_addStyle("html{font-family: arial, sans-serrif;}");
+    GM_addStyle("html{font-family: arial, sans-serrif;} table tr {background: transparent;} table b a {padding: 1em; border-radius: 1em; color: black; background: white;}");
     GM_addStyle("body, body > p:nth-child(19){text-align: center; background: #5284dc; color: white;}");
     GM_addStyle("a img {padding: 0.5em; margin: 0.1em; background: white; border-radius: 0.5em; vertical-align: middle; min-height: 6em; box-sizing: border-box; border: 3px solid white;}");
     GM_addStyle("body > p:nth-child(12) > a:nth-child(4) img, body > p:nth-child(12) > a:nth-child(5) img{min-height: 1em;}body > p:nth-child(12) > a:nth-child(5) img {padding: 1.4em;}");
