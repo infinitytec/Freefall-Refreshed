@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Freefall Refreshed
 // @namespace    Freefall with a fresh coat of paint.
-// @version      0.3
+// @version      0.4
 // @author       infinitytec
 // @match        http://freefall.purrsia.com/
 // @include      http://freefall.purrsia.com/default.htm
@@ -16,9 +16,10 @@
 
 (function() {
     'use strict';
+    //colors: blue: #5284dc orange: #ff9d3f
     //basic stuff
     GM_addStyle("html{font-family: arial, sans-serrif;}");
-    GM_addStyle("body, body > p:nth-child(19){text-align: center; background: #5284dc; color: white;}");
+    GM_addStyle("body, body > p:nth-child(19){text-align: center; background: #555555; color: white;}");
     //top navbar
     GM_addStyle("table tr {background: transparent; font-size: 0;} table b {font-size: initial;} table b a {padding: 0.5em; margin: 0.25em; border-radius: 1em; color: black; background: white; text-decoration: none; border: 3px solid white;} table b a:hover{transition: all 0.2s ease; border: 3px solid #ff9d3f;}");
     //clickable images
